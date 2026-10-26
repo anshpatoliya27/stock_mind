@@ -1,0 +1,104 @@
+# Python & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter & Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# StockMind AI - Raw & Processed Datasets (DO NOT COMMIT RAW 20GB DATA)
+Dataset/
+data/raw/
+data/processed/
+data/interim/
+*.parquet
+*.csv
+*.xlsx
+*.xls
+
+# Models, Weights & Checkpoints (Heavy Artifacts)
+*.pt
+*.pth
+*.bin
+*.onnx
+*.h5
+*.keras
+*.safetensors
+*.joblib
+*.pkl
+*.pickle
+models/checkpoints/
+artifacts/models/
+artifacts/trained_models/*
+!artifacts/trained_models/.gitkeep
+artifacts/cache/
+artifacts/checkpoints/
+
+# Runtime Generated Artifacts & Media (Preserve folder structure with .gitkeep)
+artifacts/conversations.json
+artifacts/data_inventory_report.json
+artifacts/colab_audit/
+artifacts/generated_charts/*
+!artifacts/generated_charts/.gitkeep
+artifacts/uploads/*
+!artifacts/uploads/.gitkeep
+
+# Spark & Distributed Execution
+metastore_db/
+derby.log
+spark-warehouse/
+*.checkpoint
+
+# Credentials, Keys & Secrets
+.env
+.env.*
+!.env.example
+secrets.json
+service_account.json
+credentials.json
+*.pem
+*.key
+
+# Test & Coverage Outputs
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# Logs & Temporary files
+logs/
+*.log
+tmp/
+scratch/
